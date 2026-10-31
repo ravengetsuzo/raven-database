@@ -8,5 +8,25 @@
   "hero": "images/17934507263846i99.jpg",
   "logo": "https://files.catbox.moe/o894ua.png"
  },
- "products": []
+ "products": [
+  {
+   "id": "p1793457118204",
+   "name": "Raven Forgotten",
+   "price": 100000,
+   "stock": 5,
+   "category": "",
+   "rating": 4,
+   "sizes": [
+    "M",
+    "L",
+    "XL"
+   ],
+   "desc": "",
+   "featured": false,
+   "images": [
+    "images/1793457112067y557.jpg"
+   ],
+   "ts": 1793457118207
+  }
+ ]
 }
