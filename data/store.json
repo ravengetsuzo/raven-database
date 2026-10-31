@@ -8,23 +8,5 @@
   "hero": "images/17934507263846i99.jpg",
   "logo": "https://files.catbox.moe/o894ua.png"
  },
- "products": [
-  {
-   "id": "p1793444582819",
-   "name": "Baju Casual",
-   "price": 150,
-   "stock": 5,
-   "category": "",
-   "rating": 0,
-   "sizes": [
-    "M",
-    "L",
-    "XL"
-   ],
-   "desc": "",
-   "featured": false,
-   "images": [],
-   "ts": 1793444582832
-  }
- ]
+ "products": []
 }
