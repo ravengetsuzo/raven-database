@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="id"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Raven Get Suzo</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}body{font:400 15px/1.5 Inter,sans-serif;color:#111;background:#fff;-webkit-font-smoothing:antialiased}section,#new,#all{scroll-margin-top:70px}
+a{color:inherit;text-decoration:none}button,select,input,textarea{font:inherit}button{cursor:pointer}
+h1,h2,.bb{font-weight:700;letter-spacing:.04em;text-transform:uppercase}
+header{background:#000;color:#fff;position:sticky;top:0;z-index:20;height:64px;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;padding:0 20px}#bm{justify-self:start}#bc{justify-self:end}
+header button{background:none;border:0;color:#fff;padding:6px;position:relative;display:flex}
+.logo{font-weight:700;font-size:22px;letter-spacing:.3em;display:flex;align-items:center;justify-content:center;padding-left:.3em}.logo img{height:80px;width:auto;display:block}
+#cc{position:absolute;top:-4px;right:-6px;background:#fff;color:#000;font-size:10px;font-weight:700;border-radius:9px;padding:1px 6px}
+#ann{background:#fff;color:#000;text-align:center;font-size:12px;letter-spacing:.06em;text-transform:uppercase;padding:8px 10px;border-bottom:1px solid #e5e5e5}
+.hero{height:72vh;min-height:360px;background:#111 center/cover;display:flex;align-items:flex-end;padding:32px 20px}
+.hero div{color:#fff}.hero h1{font-size:clamp(48px,9vw,110px);line-height:.95;text-shadow:0 2px 20px #0006}
+.btn{display:inline-block;background:#000;color:#fff;border:1px solid #000;padding:12px 26px;margin-top:12px;letter-spacing:.06em;text-transform:uppercase;font-size:14px}
+.btn.w{background:#fff;color:#000;border-color:#fff}.btn.full{width:100%;text-align:center}
+.btn:disabled{opacity:.35;cursor:not-allowed}
+section{max-width:1200px;margin:0 auto;padding:48px 20px}
+h2{font-size:26px;text-align:center;margin-bottom:32px;color:#000}
+.filters{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-bottom:32px}
+.filters select{appearance:none;-webkit-appearance:none;border:1px solid #ddd;background:#fff url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='6'><path d='M1 1l4 4 4-4' fill='none' stroke='black' stroke-width='1.5'/></svg>") no-repeat right 12px center;padding:12px 34px 12px 14px;border-radius:0;font-weight:500;font-size:14px;color:#111;cursor:pointer}.filters select:hover,.filters select:focus{border-color:#000;outline:0}.btn{transition:.2s}.btn:hover{opacity:.8}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:28px 16px}
+@media(min-width:800px){.grid{grid-template-columns:repeat(4,1fr);gap:40px 24px}}
+.card{cursor:pointer}.ph{aspect-ratio:1/1.1;background:#f2f2f2;display:flex;align-items:center;justify-content:center;color:#aaa;overflow:hidden;position:relative;text-align:center;padding:10px}
+.ph img{width:100%;height:100%;object-fit:cover;transition:.4s}.card:hover .ph img{transform:scale(1.04)}
+.tag{position:absolute;top:8px;left:8px;background:#000;color:#fff;font-size:11px;padding:3px 8px;letter-spacing:.08em}
+.card h3{font-weight:500;font-size:14px;margin-top:14px;line-height:1.4}.card p{margin-top:4px}.card small{color:#777}
+footer{background:#000;color:#fff;text-align:center;padding:64px 20px 40px}
+footer h2{color:#fff;margin-bottom:12px;font-size:22px}footer a{opacity:.85}.fl{max-width:1200px;margin:56px auto 0;padding-top:24px;border-top:1px solid #222;text-align:left;font-weight:700;letter-spacing:.2em;font-size:18px}.fl img{height:80px;width:auto;display:block}
+.ov{position:fixed;inset:0;background:#0008;z-index:40;display:none}.ov.on{display:block}
+.drawer{position:fixed;top:0;bottom:0;width:min(400px,92vw);background:#fff;z-index:50;transform:translateX(-100%);transition:.3s;display:flex;flex-direction:column}
+.drawer.r{right:0;transform:translateX(100%)}.drawer.on{transform:none}
+.dh{padding:18px 20px;border-bottom:1px solid #eee;display:flex;justify-content:space-between;align-items:center}.dh button{background:none;border:0;font-size:24px}
+.db{flex:1;overflow:auto;padding:20px}.df{padding:20px;border-top:1px solid #eee}
+.menu a{display:block;padding:14px 0;font-weight:600;font-size:18px;letter-spacing:.08em;text-transform:uppercase;border-bottom:1px solid #f0f0f0}
+.ci{display:flex;gap:12px;margin-bottom:18px}.ci .ph{width:72px;aspect-ratio:1;flex:none;padding:0}.ci div:last-child{flex:1;font-size:14px}
+.q button{width:26px;height:26px;border:1px solid #ccc;background:#fff}
+.df input,.df textarea{width:100%;border:1px solid #ddd;padding:10px;margin-bottom:8px;border-radius:4px}
+.modal{position:fixed;inset:0;z-index:60;display:none;align-items:center;justify-content:center;padding:16px}.modal.on{display:flex}
+.mb{background:#fff;max-width:900px;width:100%;max-height:92vh;overflow:auto;display:grid;grid-template-columns:1fr;position:relative}
+@media(min-width:760px){.mb{grid-template-columns:1fr 1fr}}
+.mb .x{position:absolute;top:8px;right:12px;background:#fff;border:0;font-size:28px;z-index:2}
+.mi{padding:28px}.mi h2{text-align:left;font-size:34px;margin-bottom:6px}
+.sz{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0}.sz button{min-width:46px;padding:10px;border:1px solid #ccc;background:#fff}.sz button.on{background:#000;color:#fff;border-color:#000}
+.thumbs{display:flex;gap:6px;padding:6px}.thumbs img{width:56px;height:56px;object-fit:cover;cursor:pointer;opacity:.6}.thumbs img.on{opacity:1}
+.empty{text-align:center;color:#888;padding:40px}
+</style></head><body>
+<div id="ann"></div>
+<header>
+  <button id="bm" aria-label="Menu"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M3 7h18M3 12h18M3 17h18"/></svg></button>
+  <a href="#" class="logo" id="logo">RAVEN</a>
+  <button id="bc" aria-label="Keranjang"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M5 8h14l-1 12H6L5 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span id="cc">0</span></button>
+</header>
+<div class="hero" id="hero"><div><h1 id="ht">NEW<br>COLLECTION</h1><a class="btn w" href="#all">Shop now</a></div></div>
+<section id="new"><h2>NEW ARRIVAL</h2><div class="grid" id="g1"></div></section>
+<section id="all"><h2>ALL PRODUCTS</h2>
+  <div class="filters">
+    <select id="fc"></select><select id="fs"></select>
+    <select id="fp"><option value="">price : all</option><option value="0-300000">&lt; Rp 300.000</option><option value="300000-500000">Rp 300.000 - 500.000</option><option value="500000-99999999">&gt; Rp 500.000</option></select>
+    <select id="fa"><option value="">availability : all</option><option value="in">In stock</option><option value="out">Sold out</option></select>
+    <select id="fo"><option value="f">sort : Featured</option><option value="n">sort : Newest</option><option value="pa">sort : Price low-high</option><option value="pd">sort : Price high-low</option></select>
+  </div><div class="grid" id="g2"></div></section>
+<footer><h2>FIND US ON INSTAGRAM</h2><a id="ig" href="#">@raven</a><div class="fl" id="fl"></div></footer>
+
+<div class="ov" id="ov"></div>
+<aside class="drawer" id="dm"><div class="dh"><b class="bb" style="font-size:15px">MENU</b><button data-close>&times;</button></div>
+  <div class="db menu"><a href="#" data-close>Home</a><a href="#new" data-close>New Arrival</a><a href="#all" data-close>All Products</a><a id="igm" href="#" target="_blank">Instagram</a></div></aside>
+<aside class="drawer r" id="dc"><div class="dh"><b class="bb" style="font-size:15px">KERANJANG</b><button data-close>&times;</button></div>
+  <div class="db" id="cl"></div>
+  <div class="df"><div style="display:flex;justify-content:space-between;margin-bottom:12px"><span>Total</span><b id="ct">Rp 0</b></div>
+    <input id="cn" placeholder="Nama penerima"><textarea id="ca" rows="2" placeholder="Alamat lengkap"></textarea>
+    <button class="btn full" id="co">Checkout via WhatsApp</button></div></aside>
+<div class="modal" id="pm"><div class="mb" id="pb"></div></div>
+
+<script>
+/* ===== KONFIGURASI: isi dengan repo GitHub kamu ===== */
+const CFG={owner:'ravengetsuzo',repo:'raven-database',branch:'main',path:'data/store.json',
+  logo:''}; // <- tempel URL logo di sini (atau isi lewat Admin > Pengaturan > Logo)
+/* ==================================================== */
+const DEMO={settings:{name:'Raven Get Suzo',wa:'6285702092051',instagram:'raven',hero:'',announcement:'Gratis ongkir min. belanja Rp 500.000',categories:['Hoodie','Shorts','Knitwear','Zip']},
+products:[
+{id:'d1',name:'Hoodie Raven - Relief Grey piping',price:675000,category:'Hoodie',sizes:['S','M','L','XL'],stock:10,images:[],featured:true,rating:4.5,ts:4},
+{id:'d2',name:'Short Sweatpants Raven - Dept',price:550000,category:'Shorts',sizes:['M','L','XL'],stock:6,images:[],featured:true,rating:4.5,ts:3},
+{id:'d3',name:'Knitwear Raven - Limbo',price:450000,category:'Knitwear',sizes:['M','L'],stock:0,images:[],featured:true,rating:4.8,ts:2},
+{id:'d4',name:'Zip Fitted Raven - Nord Black',price:649000,category:'Zip',sizes:['S','M','L'],stock:8,images:[],featured:true,rating:5,ts:1}]};
+let S=DEMO.settings,P=DEMO.products,cart=JSON.parse(localStorage.getItem('rv_cart')||'[]'),sel={size:'',id:''};
+const $=s=>document.querySelector(s),rp=n=>'Rp '+Number(n).toLocaleString('id-ID');
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const img=p=>!p?'':/^(https?:|data:)/.test(p)?p:`https://raw.githubusercontent.com/${CFG.owner}/${CFG.repo}/${CFG.branch}/${p}`;
+async function load(){
+  try{const r=await fetch(`https://raw.githubusercontent.com/${CFG.owner}/${CFG.repo}/${CFG.branch}/${CFG.path}?t=${Math.floor(Date.now()/60000)}`);
+    if(r.ok){const d=await r.json();S={...S,...d.settings};P=d.products||[];}}catch(e){}
+  init();
+}
+function setLogo(){const L=S.logo||CFG.logo,im=L?`<img src="${esc(img(L))}" alt="${esc(S.name||'Raven')}">`:'';
+  $('#logo').innerHTML=im||'RAVEN';$('#fl').innerHTML=im||esc((S.name||'RAVEN GET SUZO').toUpperCase());}
+function init(){
+  document.title=S.name||'Raven';$('#ann').textContent=S.announcement||'';$('#ann').style.display=S.announcement?'':'none';
+  if(S.hero)$('#hero').style.backgroundImage=`linear-gradient(#0003,#0006),url(${img(S.hero)})`;
+  const ig=`https://instagram.com/${(S.instagram||'').replace('@','')}`;
+  $('#ig').href=$('#igm').href=ig;$('#ig').textContent='@'+(S.instagram||'').replace('@','');setLogo();
+  const cats=[...new Set([...(S.categories||[]),...P.map(p=>p.category)].filter(Boolean))],sizes=[...new Set(P.flatMap(p=>p.sizes||[]))];
+  $('#fc').innerHTML='<option value="">category : all</option>'+cats.map(c=>`<option>${esc(c)}</option>`).join('');
+  $('#fs').innerHTML='<option value="">size : all</option>'+sizes.map(c=>`<option>${esc(c)}</option>`).join('');
+  render();cartUI();
+}
+const card=p=>`<div class="card" data-id="${esc(p.id)}"><div class="ph">${p.images?.[0]?`<img loading="lazy" src="${esc(img(p.images[0]))}" alt="${esc(p.name)}">`:esc(p.name)}${p.stock<=0?'<span class="tag">SOLD OUT</span>':''}</div>
+<h3>${esc(p.name)}</h3><p>${rp(p.price)}</p>${p.rating?`<small>&#9734; ${p.rating}</small>`:''}</div>`;
+function render(){
+  const f=p=>p.featured,n=[...P].sort((a,b)=>(b.ts||0)-(a.ts||0)).slice(0,4);
+  $('#g1').innerHTML=n.map(card).join('');
+  let l=[...P];const c=$('#fc').value,s=$('#fs').value,pr=$('#fp').value,a=$('#fa').value,o=$('#fo').value;
+  if(c)l=l.filter(p=>p.category===c);if(s)l=l.filter(p=>(p.sizes||[]).includes(s));
+  if(pr){const[x,y]=pr.split('-').map(Number);l=l.filter(p=>p.price>=x&&p.price<y)}
+  if(a)l=l.filter(p=>a==='in'?p.stock>0:p.stock<=0);
+  if(o==='n')l.sort((a,b)=>(b.ts||0)-(a.ts||0));if(o==='pa')l.sort((a,b)=>a.price-b.price);if(o==='pd')l.sort((a,b)=>b.price-a.price);
+  if(o==='f')l.sort((a,b)=>!!b.featured-!!a.featured);
+  $('#g2').innerHTML=l.length?l.map(card).join(''):'<p class="empty" style="grid-column:1/-1">Produk tidak ditemukan.</p>';
+}
+['fc','fs','fp','fa','fo'].forEach(i=>$('#'+i).onchange=render);
+function open(d){$('#ov').classList.add('on');$(d).classList.add('on')}
+function closeAll(){document.querySelectorAll('.drawer,.ov,.modal').forEach(e=>e.classList.remove('on'))}
+$('#bm').onclick=()=>open('#dm');$('#bc').onclick=()=>{cartUI();open('#dc')};$('#ov').onclick=closeAll;
+document.addEventListener('click',e=>{
+  if(e.target.closest('[data-close]'))closeAll();
+  if(e.target===$('#pm'))closeAll();
+  const c=e.target.closest('.card');if(c)product(c.dataset.id);
+});
+function product(id){
+  const p=P.find(x=>x.id===id);if(!p)return;sel={size:'',id};
+  const im=p.images||[];
+  $('#pb').innerHTML=`<button class="x" data-close>&times;</button>
+  <div><div class="ph" style="aspect-ratio:1/1.1">${im[0]?`<img id="mi" src="${esc(img(im[0]))}">`:esc(p.name)}</div>
+  ${im.length>1?`<div class="thumbs">${im.map((u,i)=>`<img class="${i?'':'on'}" src="${esc(img(u))}" data-t="${i}">`).join('')}</div>`:''}</div>
+  <div class="mi"><h2>${esc(p.name)}</h2><b>${rp(p.price)}</b><p style="color:#666;margin:14px 0;white-space:pre-line">${esc(p.desc||'')}</p>
+  <div>Ukuran</div><div class="sz">${(p.sizes||[]).map(s=>`<button data-s="${esc(s)}">${esc(s)}</button>`).join('')}</div>
+  <small style="color:#888">${p.stock>0?'Stok: '+p.stock:'Stok habis'}</small><br>
+  <button class="btn full" id="add" ${p.stock<=0?'disabled':''}>${p.stock<=0?'Sold out':'Tambah ke keranjang'}</button></div>`;
+  $('#ov').classList.add('on');$('#pm').classList.add('on');
+  $('#pb').onclick=e=>{
+    const s=e.target.dataset.s,t=e.target.dataset.t;
+    if(s){sel.size=s;[...$('#pb').querySelectorAll('.sz button')].forEach(b=>b.classList.toggle('on',b.dataset.s===s))}
+    if(t!=null){$('#mi').src=img(im[t]);[...e.target.parentNode.children].forEach(x=>x.classList.toggle('on',x===e.target))}
+    if(e.target.id==='add'){
+      if((p.sizes||[]).length&&!sel.size)return alert('Pilih ukuran dulu');
+      const k=cart.find(c=>c.id===id&&c.size===sel.size);k?k.qty=Math.min(k.qty+1,p.stock):cart.push({id,size:sel.size,qty:1});
+      saveCart();closeAll();cartUI();open('#dc');
+    }
+  };
+}
+const saveCart=()=>localStorage.setItem('rv_cart',JSON.stringify(cart));
+function cartUI(){
+  cart=cart.filter(c=>P.find(p=>p.id===c.id));
+  $('#cc').textContent=cart.reduce((a,c)=>a+c.qty,0);
+  let t=0;$('#cl').innerHTML=cart.length?cart.map((c,i)=>{const p=P.find(x=>x.id===c.id);t+=p.price*c.qty;
+    return `<div class="ci"><div class="ph">${p.images?.[0]?`<img src="${esc(img(p.images[0]))}">`:''}</div><div><b>${esc(p.name)}</b><br>${c.size?'Size '+esc(c.size)+' · ':''}${rp(p.price)}
+    <div class="q" style="margin-top:8px"><button data-q="${i}" data-d="-1">-</button> ${c.qty} <button data-q="${i}" data-d="1">+</button></div></div></div>`}).join(''):'<p class="empty">Keranjang kosong</p>';
+  $('#ct').textContent=rp(t);
+}
+$('#cl').onclick=e=>{const i=e.target.dataset.q;if(i==null)return;const c=cart[i],p=P.find(x=>x.id===c.id);
+  c.qty=Math.min(c.qty+Number(e.target.dataset.d),p.stock);if(c.qty<=0)cart.splice(i,1);saveCart();cartUI()};
+$('#co').onclick=()=>{
+  if(!cart.length)return;const n=$('#cn').value.trim(),a=$('#ca').value.trim();if(!n||!a)return alert('Isi nama dan alamat');
+  let t=0,m=`Halo ${S.name||'Raven'}, saya mau order:\n\n`;
+  cart.forEach(c=>{const p=P.find(x=>x.id===c.id);t+=p.price*c.qty;m+=`- ${p.name}${c.size?' ('+c.size+')':''} x${c.qty} = ${rp(p.price*c.qty)}\n`});
+  m+=`\nTotal: ${rp(t)}\nNama: ${n}\nAlamat: ${a}`;
+  window.open(`https://wa.me/${S.wa}?text=${encodeURIComponent(m)}`,'_blank');
+};
+load();
+</script></body></html>
