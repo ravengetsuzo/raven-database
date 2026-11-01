@@ -1,87 +1,99 @@
 {
- "settings": {
-  "name": "Raven Get Suzo",
-  "wa": "6285702092051",
-  "instagram": "ravengetsuzo",
-  "announcement": "NEW SENNA T-SHIRT 1/1 (LIMITED EDITION)",
-  "categories": [],
-  "hero": "images/17934507263846i99.jpg",
-  "logo": "https://files.catbox.moe/o894ua.png"
- },
- "products": [
-  {
-   "id": "p1793530409424",
-   "name": "SENNA T-SHIRT",
-   "price": 1600000,
-   "stock": 1,
-   "category": "",
-   "rating": 4.5,
-   "sizes": [
-    "XL"
-   ],
-   "desc": "SENNA T-SHIRT\n\nThe Art of Understated Luxury.\n\nSimplicity is the ultimate sophistication.\n\nSENNA T-SHIRT hadir dengan desain minimalis yang mengutamakan kualitas, kenyamanan, dan karakter. Dibuat menggunakan premium Merino Wool dengan sentuhan lembut, siluet regular fit, serta tampilan timeless yang tidak lekang oleh tren.\n\nDirancang untuk mereka yang memahami bahwa kemewahan tidak selalu harus terlihat mencolok.\n\nPRODUCT DETAILS\n\n- Product: SENNA T-SHIRT\n- Color: Deep Black\n- Material: Premium Merino Wool\n- Fit: Regular Fit\n- Design: Minimalist\n- Edition: 001/001\n\nLIMITED TO ONE. NEVER REPRODUCED.\n\nOne piece. One owner. No restock.",
-   "featured": true,
-   "images": [
-    "images/179353032648884oe.jpg"
-   ],
-   "ts": 1793530409428
+  "settings": {
+    "name": "Raven Get Suzo",
+    "wa": "6285702092051",
+    "instagram": "ravengetsuzo",
+    "announcement": "NEW SENNA T-SHIRT 1/1 (LIMITED EDITION)",
+    "categories": [],
+    "hero": "images/17934507263846i99.jpg",
+    "logo": "https://files.catbox.moe/o894ua.png"
   },
-  {
-   "id": "p1793464367895",
-   "name": "Contrast Piping Raven",
-   "price": 190000,
-   "stock": 5,
-   "category": "",
-   "rating": 4,
-   "sizes": [
-    "M",
-    "L",
-    "XL"
-   ],
-   "desc": "",
-   "featured": true,
-   "images": [
-    "images/1793464363903b5hi.jpg"
-   ],
-   "ts": 1793464367895
-  },
-  {
-   "id": "p1793457228399",
-   "name": "Raven Celestial",
-   "price": 120000,
-   "stock": 5,
-   "category": "",
-   "rating": 4,
-   "sizes": [
-    "M",
-    "L",
-    "XL"
-   ],
-   "desc": "",
-   "featured": false,
-   "images": [
-    "images/1793457224811c7rq.jpg"
-   ],
-   "ts": 1793457228404
-  },
-  {
-   "id": "p1793457118204",
-   "name": "Raven Forgotten",
-   "price": 100000,
-   "stock": 5,
-   "category": "",
-   "rating": 4,
-   "sizes": [
-    "M",
-    "L",
-    "XL"
-   ],
-   "desc": "",
-   "featured": false,
-   "images": [
-    "images/1793457112067y557.jpg"
-   ],
-   "ts": 1793457118207
-  }
- ]
+  "products": [
+    {
+      "id": "p1793530409424",
+      "name": "SENNA T-SHIRT",
+      "price": 1600000,
+      "stock": 1,
+      "category": "",
+      "rating": 4.5,
+      "sizes": [
+        "XL"
+      ],
+      "desc": "SENNA T-SHIRT\n\nThe Art of Understated Luxury.\n\nSimplicity is the ultimate sophistication.\n\nSENNA T-SHIRT hadir dengan desain minimalis yang mengutamakan kualitas, kenyamanan, dan karakter. Dibuat menggunakan premium Merino Wool dengan sentuhan lembut, siluet regular fit, serta tampilan timeless yang tidak lekang oleh tren.\n\nDirancang untuk mereka yang memahami bahwa kemewahan tidak selalu harus terlihat mencolok.\n\nPRODUCT DETAILS\n\n- Product: SENNA T-SHIRT\n- Color: Deep Black\n- Material: Premium Merino Wool\n- Fit: Regular Fit\n- Design: Minimalist\n- Edition: 001/001\n\nLIMITED TO ONE. NEVER REPRODUCED.\n\nOne piece. One owner. No restock.",
+      "featured": true,
+      "images": [
+        "images/179353032648884oe.jpg"
+      ],
+      "ts": 1793530409428,
+      "wish": 0,
+      "views": 0,
+      "shares": 0
+    },
+    {
+      "id": "p1793464367895",
+      "name": "Contrast Piping Raven",
+      "price": 190000,
+      "stock": 5,
+      "category": "",
+      "rating": 4,
+      "sizes": [
+        "M",
+        "L",
+        "XL"
+      ],
+      "desc": "",
+      "featured": true,
+      "images": [
+        "images/1793464363903b5hi.jpg"
+      ],
+      "ts": 1793464367895,
+      "wish": 0,
+      "views": 0,
+      "shares": 0
+    },
+    {
+      "id": "p1793457228399",
+      "name": "Raven Celestial",
+      "price": 120000,
+      "stock": 5,
+      "category": "",
+      "rating": 4,
+      "sizes": [
+        "M",
+        "L",
+        "XL"
+      ],
+      "desc": "",
+      "featured": false,
+      "images": [
+        "images/1793457224811c7rq.jpg"
+      ],
+      "ts": 1793457228404,
+      "wish": 0,
+      "views": 0,
+      "shares": 0
+    },
+    {
+      "id": "p1793457118204",
+      "name": "Raven Forgotten",
+      "price": 100000,
+      "stock": 5,
+      "category": "",
+      "rating": 4,
+      "sizes": [
+        "M",
+        "L",
+        "XL"
+      ],
+      "desc": "",
+      "featured": false,
+      "images": [
+        "images/1793457112067y557.jpg"
+      ],
+      "ts": 1793457118207,
+      "wish": 0,
+      "views": 0,
+      "shares": 0
+    }
+  ]
 }
