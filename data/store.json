@@ -6,7 +6,14 @@
     "announcement": "NEW SENNA T-SHIRT 1/1 (LIMITED EDITION)",
     "categories": [],
     "hero": "images/17934507263846i99.jpg",
-    "logo": "https://files.catbox.moe/o894ua.png"
+    "logo": "https://files.catbox.moe/o894ua.png",
+    "autoApprove": true,
+    "feat": {
+      "wish": true,
+      "recent": true,
+      "share": true,
+      "review": true
+    }
   },
   "products": [
     {
