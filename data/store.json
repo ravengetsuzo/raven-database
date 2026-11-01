@@ -13,7 +13,9 @@
       "recent": true,
       "share": true,
       "review": true
-    }
+    },
+    "theme": "minimal",
+    "themePick": false
   },
   "products": [
     {
