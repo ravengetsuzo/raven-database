@@ -38,6 +38,24 @@
       "views": 0,
       "shares": 0,
       "limited": true
+    },
+    {
+      "id": "p1793619353396",
+      "name": "RAVEN LOVEBOUND",
+      "price": 250000,
+      "category": "",
+      "sizes": [
+        "L",
+        "XL"
+      ],
+      "stock": 2,
+      "desc": "LOVEBOUND HOODIE\n\nHoodie dengan desain minimalis yang memadukan ilustrasi pixel art pada bagian depan dan belakang. Menggunakan bahan Cotton Fleece yang lembut, nyaman, dan memiliki karakteristik hangat.\n\nDilengkapi detail grafis sederhana dengan perpaduan warna hitam, putih, dan merah yang memberikan tampilan khas tanpa terlihat berlebihan.\n\nProduct Details\n\n- Material: Cotton Fleece\n- Soft and comfortable\n- Warm fabric\n- Front and back graphic\n- Pixel art illustration\n- Classic hoodie fit\n\nLOVEBOUND — A simple design with its own character.",
+      "images": [
+        "images/1793619345965-20261102_175202.jpg"
+      ],
+      "featured": false,
+      "limited": false,
+      "ts": 1793530409429
     }
   ]
 }
