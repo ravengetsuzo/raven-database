@@ -7,7 +7,7 @@
     "categories": [],
     "hero": "images/17934507263846i99.jpg",
     "logo": "https://files.catbox.moe/o894ua.png",
-    "autoApprove": false,
+    "autoApprove": true,
     "feat": {
       "wish": true,
       "recent": true,
