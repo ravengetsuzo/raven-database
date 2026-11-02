@@ -10,12 +10,11 @@
     "autoApprove": true,
     "feat": {
       "wish": true,
-      "recent": true,
-      "share": true,
-      "review": true
+      "recent": false,
+      "share": true
     },
     "theme": "minimal",
-    "themePick": true
+    "themePick": false
   },
   "products": [
     {
