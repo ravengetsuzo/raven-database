@@ -59,7 +59,7 @@
     {
       "id": "p1793855467848",
       "name": "FORGOTTEN",
-      "price": 250,
+      "price": 250000,
       "category": "",
       "sizes": [
         "m",
@@ -68,8 +68,10 @@
       ],
       "stock": 0,
       "desc": "",
-      "images": [],
-      "featured": true,
+      "images": [
+        "images/1793855594201-lv_0_20261031002830.jpg"
+      ],
+      "featured": false,
       "limited": false,
       "ts": 1793530409430
     }
