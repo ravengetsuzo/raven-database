@@ -74,6 +74,25 @@
       "featured": false,
       "limited": false,
       "ts": 1793530409430
+    },
+    {
+      "id": "p1795308296711",
+      "name": "INVICTUS",
+      "price": 150000,
+      "category": "",
+      "sizes": [
+        "M",
+        "L",
+        "XL"
+      ],
+      "stock": 10,
+      "desc": "",
+      "images": [
+        "images/1795308252927-20261122_073405.jpg"
+      ],
+      "featured": true,
+      "limited": false,
+      "ts": 1793530409431
     }
   ]
 }
