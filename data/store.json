@@ -112,6 +112,22 @@
       "featured": true,
       "limited": false,
       "ts": 1793530409432
+    },
+    {
+      "id": "p1795365414028",
+      "name": "SHOOTLOVE",
+      "price": 200000,
+      "category": "",
+      "sizes": [
+        "L",
+        "XL"
+      ],
+      "stock": 5,
+      "desc": "",
+      "images": [],
+      "featured": true,
+      "limited": false,
+      "ts": 1793530409433
     }
   ]
 }
