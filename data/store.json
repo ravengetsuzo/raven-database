@@ -124,7 +124,9 @@
       ],
       "stock": 5,
       "desc": "",
-      "images": [],
+      "images": [
+        "images/1795365505281-20261121_182952.jpg"
+      ],
       "featured": true,
       "limited": false,
       "ts": 1793530409433
